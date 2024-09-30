@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Car_Rental_style.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="header-update-profile">
+        <img src="../../Assets/logo 2.avif" class="logo">
+        <nav class="menu">
+            <ul class="navbar">
+                <li><a href="../Home/Home_Page.html" target="_blank">Home</a></li>
+                <li><a href="../About_Us/About_Page.html" target="_blank">About Us</a></li>
+                <li><a href="../Explore_Cars/Explore_Cars.html" target="_blank">Explore Cars</a></li>
+                <li><a href="../Contact_Us/Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li style="margin-left: 5%; margin-right: 0%;padding-left: 0; padding-right: 1%;"><a href="../Login_Form/Login_Form.html"
+                        target="_blank">Login</a></li>
+                <li style="margin-left: 0%; margin-right: 5%;padding-left: 1%; padding-right: 0;"><a href="../Register_Form/Register_Form.html"
+                        target="_blank">Register</a></li>
+            </ul>
+        </nav>
+        <div class="in-pic-text">
+            <h1 style="padding-top:8%; margin-left: 20%;padding-bottom:11.2%">
+                My Profile</h1>
+
+        </div>
+    </div>
+
+    <div class="update" style="padding: 3%;">
+        <!-- <form id="profile-form"> -->
+        <form class="update">
+            <h3 class="update-title">1. Basic Information</h3>
+
+            <div class="update-profile">
+                <div>
+                    <label class="grey-label">Name</label>
+                    <input class="form-input" style="padding-right: 200px;" required>
+                </div>
+                <div>
+                    <label class="grey-label" for="email">Email Id</label>
+                    <input class="form-input" style="padding-right: 200px;" required>
+                </div>
+            </div>
+            <div class="update-profile">
+                <div>
+                    <label class="grey-label" for="phone">Phone Number</label>
+                    <input class="form-input" style="padding-right: 200px;" required>
+                </div>
+                <div>
+                    <label class="grey-label" for="phone">Alternate Phone Number</label>
+                    <input class="form-input" style="padding-right: 200px;" required>
+                </div>
+            </div>
+
+            <div style="margin: 0 4%;">
+                <label class="grey-label" for="address">Address</label>
+                <textarea class="form-input" required></textarea>
+            </div>
+        </form>
+
+        <form class="update">
+            <h3 class="update-title">2. Driving License</h3>
+            <div style="margin: 0 4%;">
+                <label class="grey-label" for="license-number">Driving License Number</label>
+                <input class="form-input" type="text" id="license-number" name="license-number" required>
+            </div>
+            <!-- <label for="license-email">Email Id</label>
+        <input type="email" id="license-email" name="license-email" required> -->
+            <div class="update-profile">
+                <div>
+                    <label class="grey-label" for="license-front">Driving License Front Image</label>
+                    <input class="form-input" type="file" style="padding-right: 200px;" accept="image/*"
+                        required>
+                </div>
+                <div>
+                    <label class="grey-label" for="license-front">Driving License Back Image</label>
+                    <input class="form-input" type="file" style="padding-right: 200px;" accept="image/*"
+                        required>
+                </div>
+            </div>
+        </form>
+
+        <form class="update">
+            <h3 class="update-title">3. Address / ID Proof</h3>
+            <div style="margin: 0 4%;">
+                <label class="grey-label">Select Address / ID Proof</label>
+                <select class="form-input" required>
+                    <option value="">Select ID Proof</option>
+                    <option value="passport">Passport</option>
+                    <option value="national-id">National ID</option>
+                    <option value="utility-bill">Utility Bill</option>
+                </select>
+            </div>
+            <div style="margin: 0 4%;">
+                <label class="grey-label">Selected ID Proof Number</label>
+                <input class="form-input" type="text" required>
+            </div>
+        </form>
+
+        <button type="submit" style="margin-left: 75%;border-radius: 0;">Update Profile</button>
+        <!-- </form> -->
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section com-logo">
+                <img src="../../Assets/logo 2.avif" class="footer-logo" alt="Car Rental Logo">
+            </div>
+            <div class="footer-section company-info" style="padding: 0%; margin-top: 3.7%;">
+                <p>1234 Rental Avenue, City, State, ZIP Code</p>
+                <p>Phone Number: (123) 456-7890</p>
+                <p>Email: info@mycarrentalcompany.com</p>
+            </div>
+            <div class="footer-section quick-links" style="padding-left: 5%;">
+                <h4>Quick Links</h4>
+                <!-- <ul> -->
+                <p><a href="Home_Page.html">Home</a></p>
+                <p><a href="About_Page.html">About Us</a></p>
+                <p><a href="About_Page.html">Explore Cars</a></p>
+                <p><a href="">Contact Us</a></p>
+                <!-- </ul> -->
+            </div>
+            <div class="footer-section operating-hours">
+                <h4>Operating Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-section social-media-links" style="padding-left: 5%;">
+                <h4>Social Media Links</h4>
+                <!-- <ul> -->
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">LinkedIn</a></p>
+                <!-- </ul> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2024 UT01426Canee | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

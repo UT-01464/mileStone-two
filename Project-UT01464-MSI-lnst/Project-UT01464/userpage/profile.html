@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Customer Dashboard</h1>
+        <div id="userInfo" class="text-end mb-3"></div>
+        <button id="logoutBtn" class="btn btn-secondary mb-3">Logout</button>
+        <button id="editProfileBtn" class="btn btn-primary mb-3">Edit Profile</button>
+        
+        <div class="row">
+            <!-- Available Cars -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-3">Available Cars</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Reg. Number</th>
+                            <th>Brand</th>
+                            <th>Model</th>
+                            <th>Category</th>
+                            <th>Image</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="availableCarTableBody"></tbody>
+                </table>
+            </div>
+            
+            <!-- My Rentals -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-3">My Rentals</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Reg. Number</th>
+                            <th>Brand</th>
+                            <th>Model</th>
+                            <th>Category</th>
+                            <th>Rent Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myRentalsTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Order History -->
+        <div class="col-md-12 mt-4">
+            <h2 class="mb-3">Order History</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Reg. Number</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Rent Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody id="orderHistoryTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+   <!-- Profile Edit Popup -->
+<div id="profileEditPopup" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editProfileForm">
+                    <div class="mb-3">
+                        <label for="editName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="editName" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="editAddress" placeholder="Enter your address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPhone" class="form-label">Phone Numbers</label>
+                        <input type="text" class="form-control" id="editPhone" placeholder="Enter your phone numbers">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editProfilePicture" class="form-label">Profile Picture</label>
+                        <input type="file" class="form-control" id="editProfilePicture" accept="image/*">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="saveProfileBtn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="profileScript.js"></script><script src="profiles.js"></script>
+</body>
+</html>

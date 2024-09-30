@@ -1,0 +1,124 @@
+/* body {
+    font-family: "Kantumruy Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #008B8B;
+    color: white;
+    padding: 20px 0;
+    font-family: "Imprima", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-family: "Keania One", sans-serif;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #006868;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+} */
+
+.car-details {
+    padding: 20px;
+}
+
+/* .car-details h3 {
+    margin: 10px 0;
+} */
+
+
+.car-title{
+    display:flex;
+}
+
+.car-year {
+    background-color: #C6E1E3;
+    padding: 2px 20px;
+    /* display: inline-block; */
+    /* margin-top: 0px; */
+    text-align: right;
+    margin-left: 50px;
+    color:black;
+}
+
+.car-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.car-icons span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.car-icons i {
+    margin-right: 5px;
+    color: #56B4B8;
+    margin-top: 15px;
+}
+
+.car-price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.view-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #41b6ac;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+    
+}

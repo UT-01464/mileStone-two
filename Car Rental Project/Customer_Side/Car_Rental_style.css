@@ -1,0 +1,488 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    text-align: right;
+    font-size: 130%;
+    font-weight: bold;
+    padding-top: 2.3%;
+    padding-bottom: 2.3%;
+    background-color: #56B4B8;
+    margin: 0px;
+    font-family: "Kantumruy Pro";
+
+
+}
+
+li {
+    display: inline;
+    padding: 10% 3.5%;
+    margin-right: 3%;
+}
+
+li,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    width: 6.3%;
+    margin-left: 2%;
+}
+
+.header-home {
+    background-image: url(../Assets/Home\ Page\ Image\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.header-about-us {
+    background-image: url(../Assets/About\ Page\ Image.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.header-explore-cars {
+    background-image: url(../Assets/Explore\ Cars\ Page\ Image\ cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header-update-profile {
+    background-image: url(../Assets/blog-5\ cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    font-family: "Keania One";
+    font-size: 220%;
+    color: white;
+    /* text-shadow: 5px 5px 10px black; */
+    font-weight: lighter;
+}
+
+u {
+    text-decoration-color: #2F898D;
+    /* text-shadow: 5px 5px 10px black; */
+    /* margin-top: 5px; */
+    text-decoration-thickness: 4px;
+}
+
+p {
+    font-family: "Imprima";
+    font-size: 120%;
+    color: white;
+    /* text-shadow: 5px 5px 10px black; */
+    font-weight: lighter;
+}
+
+.in-pic-text {
+    text-shadow: 5px 5px 10px black;
+    position: relative;
+
+}
+
+.random-btn {
+    background-color: #7BCED2;
+    border: none;
+    color: white;
+    font-family: "Imprima";
+    box-shadow: 5px 5px 20px black;
+    border-radius: 0px;
+    font-size: 120%;
+}
+
+h2 {
+    font-family: "Keania One";
+    font-size: 180%;
+    color: #07767B;
+    /* text-shadow: 5px 5px 10px black; */
+    font-weight: lighter;
+    margin-top: 3%;
+}
+
+.para {
+    font-family: "Imprima";
+    color: black;
+    font-size: 150%;
+
+    /* margin-left: 5% ;
+    margin-right: 5%; */
+}
+
+.cus-name {
+    font-size: 120%;
+    color: #9DA5B0;
+    font-family: "Kantumruy Pro";
+    margin-bottom: 0;
+
+}
+
+.single-review {
+    text-align: left;
+    margin: 3% 10%;
+    background-color: #FCF9A9;
+}
+
+.reviews {
+    color: #686565;
+    font-size: 105%;
+    font-family: "Kantumruy Pro";
+
+}
+
+.content {
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+span {
+    color: #07767B;
+
+}
+
+.search-form {
+    padding-top: 8%;
+    padding-bottom: 1%;
+}
+
+.form-group {
+    display: inline;
+
+
+}
+
+.booking-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 15%;
+    background-color: white;
+    padding: 2%;
+
+}
+
+.booking-input {
+    background-color: #D9D9D9;
+    padding: 1% 5%;
+    border-radius: 15px;
+    border-color: white;
+    margin-left: 2%;
+}
+
+.booking-select {
+    background-color: #D9D9D9;
+    padding: 2% 5%;
+    border-radius: 15px;
+    border-color: white;
+    margin-left: 2%;
+
+}
+
+.booking-label {
+    font-family: "Kantumruy Pro";
+    font-weight: bold;
+}
+
+button {
+    padding: 0.5% 5%;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-right: 2%;
+    background-color: #7BCED2;
+    color: white;
+    font-family: "Kantumruy Pro";
+    font-weight: bold;
+    border-color: white;
+
+}
+
+footer {
+    background-color: #008B8B;
+    color: white;
+    font-family: "Imprima";
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 6%;
+    /* margin: 0 auto; */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1%;
+}
+
+.footer-logo {
+    width: 40%;
+    margin-top: 40%;
+    margin-left: 30%;
+
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 140%;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 1%;
+}
+
+
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2%;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 0.7%;
+    background-color: #006868;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+.register-body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display-message{
+    color: red;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: "Kantumruy Pro";
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #EEEDED;
+    margin-bottom: 10px;
+
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7BCED2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grey-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.contact-form {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 10px rgb(152, 152, 152);
+    padding: 2%;
+
+}
+
+.contact-div {
+    display: flex;
+}
+
+.contact-info {
+    margin: 4% 5% 0% 5%;
+}
+
+.contact-title {
+    font-size: 150%;
+    font-family: "Kantumruy Pro";
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+div.gallery {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 5px 5px 20px rgb(38, 35, 35);
+    height: 425px;
+}
+
+.gallery:hover {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 10px 10px 20px #07767B;
+    height: 425px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.photo {
+    width: 300px;
+}
+
+.container-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+
+
+
+.car-title {
+    display: flex;
+}
+
+.car-year {
+    background-color: #C6E1E3;
+    padding: 2px 20px;
+    text-align: right;
+    margin-left: 50px;
+    color: black;
+}
+
+.car-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.car-icons i {
+    margin-right: 5px;
+    color: #56B4B8;
+    margin-top: 2%;
+}
+
+.car-price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.view-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #41b6ac;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.inside-info {
+    color: black;
+    font-size: 90%;
+    margin-top: 0;
+}
+
+.inside-line {
+    display: flex;
+}
+
+.update-profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4%;
+}
+
+.update {
+    margin: 7%;
+    padding: 0% 0% 2% 0%;
+    box-shadow: 5px 5px 20px rgb(38, 35, 35);
+    font-family: "Kantumruy Pro";
+
+
+}
+
+.update-title{
+    background-color: #07767B;
+    padding: 1% 1%;
+    color: white;
+}

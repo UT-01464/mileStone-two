@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/f515e57d88.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rrr.css">
+</head>
+
+<body>
+    <div class="dash">
+        <div class="manager" id="manager">
+            <div class="sidebar">
+                <div class="heading-manager">
+                    <h2>Car Rental Services</h2>
+                </div>
+                <ul>
+                    <li><a href="#" onclick="dashboardshow()"><i
+                                class="fa-solid fa-house"></i><span>Dashboard</span></a></li>
+                    <li><a href="#" onclick="bookingHistoryShow()"><i class="fa-solid fa-list"></i><span>Booking
+                                History</span></a></li>
+                    <li><a href="#" onclick="CustomersShow()"><i
+                                class="fa-solid fa-users"></i><span>Customers</span></a></li>
+                    <li><a href="#" onclick="CarsShow()"><i class="fa-solid fa-car"></i><span>Overdue</span></a></li>
+                    <li><a href="#" onclick="ReturnShow()"><i
+                                class="fa-solid fa-cart-shopping"></i><span>Return</span></a></li>
+                </ul>
+                <div class="manager-logout">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="dashboard-container" id="dashboardcontainer" style="display: none;">
+            <h1>Dashboard</h1>
+            <button id="openModalBtn">Add New Car</button>
+            <!-- <button id="exploreCarsBtn">Explore Cars</button> -->
+
+            <table id="deviceTable">
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model Name</th>
+                        <th>Car Reg No</th>
+                        <th>Availability</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <form id="deviceForm">
+                        <div class="form-group">
+                            <label for="brand">Brand</label>
+                            <select id="brand"></select>
+                            <button type="button" id="manageBrandsBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="modelName">Model Name</label>
+                            <select id="modelName"></select>
+                            <button type="button" id="manageModelBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year</label>
+                            <select id="year"></select>
+                            <button type="button" id="manageYearBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="transmission">Transmission</label>
+                            <select id="transmission"></select>
+                            <button type="button" id="manageTransmissionBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="fuel">Fuel</label>
+                            <select id="fuel"></select>
+                            <button type="button" id="manageFuelBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="fuelConsumption">Fuel Consumption</label>
+                            <input type="text" id="fuelConsumption" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="noOfPeople">No of People</label>
+                            <select id="noOfPeople"></select>
+                            <button type="button" id="managePeopleBtn">Manage</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price/hr</label>
+                            <input type="text" id="price" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="carRegNo">Car Reg No</label>
+                            <input type="text" id="carRegNo" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="availability">Availability:</label>
+                            <select id="availability"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Car Image</label>
+                            <input type="file" id="image" />
+                        </div>
+                        <button type="submit">Add Car</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="manageModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeManageBtn">&times;</span>
+                    <h2 id="manageTitle">Manage Options</h2>
+                    <ul id="optionList"></ul>
+                    <input type="text" id="newOption" placeholder="New option" />
+                    <button id="addOptionBtn">Add Option</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="booking-container" id="bookingcontainer" style="display: none;">
+            <h2 style="margin-left:50px ;">Rental</h2>
+            <table id="rental-table">
+                <thead>
+                    <tr>
+                        <th>NIC</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>regNumber</th>
+                        <th>brand</th>
+                        <th>model</th>
+                        <th>rentDate</th>
+                    </tr>
+                </thead>
+                <tbody id="rental-body">
+                    <!-- Customer details will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="customer-container" id="customercontainer" style="display: none;">
+            <h2 style="margin-left:50px ;">Registered Customers</h2>
+            <table id="customer-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>NIC</th>
+                        <th>License Number</th>
+                        <th>Phone</th>
+                        <th>Rental History</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-body">
+                    <!-- Customer details will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="overdue-container" id="overduecontainer" style="display: none;">
+            <h2 style="margin-left:50px ;">Overdue Alerts</h2>
+            <table id="overdue-table">
+                <thead>
+                    <tr>
+                        <th>NIC</th>
+                        <th>Name</th>
+                        <th>regNumber</th>
+                        <th>retnaldate</th>
+                        <th>returndate</th>
+                        <th>totaltime</th>
+                    </tr>
+                </thead>
+                <tbody id="overdue-list">
+                    <!-- Overdue alerts will be displayed here -->
+                </tbody>
+
+            </table>
+            <p id="overduelist"></p>
+
+        </section>
+
+
+        <section class="return-container" id="returncontainer" style="display: none;">
+            <h2>Return Motorbike</h2>
+            <form id="return-motorbike-form">
+                <label for="return-nic">Customer NIC:</label>
+                <input type="text" id="return-nic" required>
+
+                <label for="return-registration">Motorbike Registration Number:</label>
+                <input type="text" id="return-registration" required>
+
+                <button type="button" onclick="returnMotorbike()">Return Motorbike</button>
+            </form>
+        </section>
+
+
+
+
+    </div>
+    <script src="rrr.js"></script>
+    <script src="DashBoard.js"></script>
+    <script src="Booking_History.js"></script>
+    <script src="Customer.js"></script>
+    <!-- <script src="../rough/rrr.js"></script> -->
+</body>
+
+</html>
